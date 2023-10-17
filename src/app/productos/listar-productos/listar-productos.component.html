@@ -1,0 +1,29 @@
+<app-navbar></app-navbar>
+<div class="container mt-4">
+    <h2>Listar Productos</h2>
+    <button routerLink="/crear-producto"  class="btn btn-primary">Agregar Producto</button>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Precio</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Producto 1</td>
+            <td>$20.00</td>
+            <td>
+              <button routerLink="/editar-producto/:id" class="btn btn-primary">Editar</button>
+              <button class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+  <app-footer></app-footer>

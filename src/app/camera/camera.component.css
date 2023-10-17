@@ -1,0 +1,29 @@
+.container {
+    max-width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+  
+  h2 {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto; 
+    display: block;
+  }
+  button{
+    background-color: #3CB371;
+    width: -webkit-fill-available;
+    border: 0;
+  }
+  button:hover{
+    background-color: #2E8B57 !important;
+    border: 0;
+  }

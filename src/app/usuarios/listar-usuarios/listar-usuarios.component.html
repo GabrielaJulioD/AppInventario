@@ -1,0 +1,30 @@
+<app-navbar></app-navbar>
+<div class="container mt-4">
+    <h2>Listar Usuarios</h2>
+    <button routerLink="/crear-usuarios"  class="btn btn-primary">Agregar Usuario</button>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Nombre</th>
+            <th>Email</th>
+            <th>Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>Gabriela Julio</td>
+            <td>gabrielaj2@gmail.com</td>
+            <td>
+              <button routerLink="/editar-usuario/:id" class="btn btn-primary">Editar</button>
+              <button class="btn btn-danger">Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    
+  </div>
+  <app-footer></app-footer>

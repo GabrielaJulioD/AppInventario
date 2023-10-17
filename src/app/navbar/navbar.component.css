@@ -1,0 +1,16 @@
+.navbar {
+    background-color: #2E8B57  !important;
+}
+.navbar-collapse {
+    display: none;
+  }
+  
+  .navbar-collapse.show {
+    display: block;
+  }
+  .nav-item:hover{
+    cursor: pointer;
+  }
+  .navbar-brand{
+    padding: 0 10px 0 10px ;
+  }

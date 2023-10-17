@@ -1,0 +1,22 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <a class="navbar-brand" href="#">Inventivapp</a>
+  <button class="navbar-toggler" type="button" (click)="toggleMenu()">
+    <span class="navbar-toggler-icon"></span>
+  </button>  
+  <div class="navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToDashboard()">Dashboard</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToUsuarios()">CRUD de Usuarios</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToProductos()">CRUD de Productos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" (click)="navigateToCamera()">Funcionalidad de Cámara</a>
+      </li>
+    </ul>
+  </div>
+</nav>

@@ -7,16 +7,17 @@
                 <h3 class="mb-0">Inicio de Sesión</h3>
             </div>
             <div class="card-body">
-                <form>
+                <form [formGroup]="formLogin"  (ngSubmit)="onSubmit()">
                 <div class="form-group">
                     <label for="email">Correo electrónico</label>
-                    <input type="email" id="email" class="form-control" placeholder="Ingrese su correo electrónico">
+                    <input type="email" id="email" class="form-control" formControlName="email" placeholder="Ingrese su correo electrónico">
                 </div>
                 <div class="form-group">
                     <label for="password">Contraseña</label>
-                    <input type="password" id="password" class="form-control" placeholder="Ingrese su contraseña">
+                    <input type="password" id="password" formControlName="password" class="form-control" placeholder="Ingrese su contraseña">
                 </div>
                 <button type="submit" class="btn btn-light btn-block">Iniciar Sesión</button>
+                <button type="submit" (click)="onClick()" class="btn btn-light btn-block google">Iniciar Sesión con Google</button>
                 </form>
                 <hr>
                 <p>¿No tienes una cuenta? <a routerLink="/registro">Regístrate aquí</a></p>

@@ -13,7 +13,11 @@ import { UsuariosModule } from './usuarios/usuarios.module';
 import { SharedModule } from './shared/shared.module';
 import { ProductosModule } from './productos/productos.module';
 import { CameraComponent } from './camera/camera.component';
-
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -31,6 +35,10 @@ import { CameraComponent } from './camera/camera.component';
     UsuariosModule,
     SharedModule,
     ProductosModule,
+    ReactiveFormsModule,
+
+    provideAuth(() => getAuth()),
+
   ],
   providers: [],
   bootstrap: [AppComponent]

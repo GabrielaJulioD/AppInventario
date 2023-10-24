@@ -5,6 +5,10 @@ import { ListarUsuariosComponent } from './listar-usuarios/listar-usuarios.compo
 import { CrearUsuariosComponent } from './crear-usuarios/crear-usuarios.component';
 import { EditarUsuarioComponent } from './editar-usuario/editar-usuario.component';
 import { SharedModule } from '../shared/shared.module';
+import { ReactiveFormsModule } from '@angular/forms';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { environment } from 'src/environments/environment';
+import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
 @NgModule({
   declarations: [
@@ -15,7 +19,10 @@ import { SharedModule } from '../shared/shared.module';
   imports: [
     CommonModule,
     UsuariosRoutingModule,
-    SharedModule
+    SharedModule,
+    ReactiveFormsModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
   ]
 })
 export class UsuariosModule implements OnInit {

@@ -22,3 +22,12 @@
     --bs-btn-disabled-border-color: #3CB371;
 }
 
+.btn-outline-danger{
+  background-color: #dd4b39;
+  border: 0;
+  margin-bottom: 10px;
+}
+button.btn-outline-danger:hover{
+  background-color: #993325 !important;
+  border: 0;
+}

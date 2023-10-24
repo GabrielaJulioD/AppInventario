@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "inventiapp-7d6e7": {
+      "hosting": {
+        "AplicacionInventario": [
+          "inventiapp-7d6e7"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "inventiapp-7d6e7"
+  }
+}

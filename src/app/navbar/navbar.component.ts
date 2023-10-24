@@ -1,25 +1,25 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-navbar',
   templateUrl: './navbar.component.html',
-  styleUrls: ['./navbar.component.css']
+  styleUrls: ['./navbar.component.css'],
 })
 export class NavbarComponent {
   toggleMenu() {
     const navbarCollapse = document.querySelector('.navbar-collapse');
-    console.log(navbarCollapse);  
+    console.log(navbarCollapse);
     if (navbarCollapse) {
       navbarCollapse.classList.toggle('show');
     }
   }
-  constructor(private router: Router) { }
+
+  constructor( private router: Router) {}
 
   navigateToDashboard() {
     this.router.navigate(['/dashboard']);
   }
-  
+
   navigateToUsuarios() {
     this.router.navigate(['/listar-usuarios']);
   }
@@ -29,4 +29,5 @@ export class NavbarComponent {
   navigateToCamera() {
     this.router.navigate(['/camera']);
   }
+ 
 }

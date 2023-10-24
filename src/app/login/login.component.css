@@ -55,5 +55,10 @@
     width: -webkit-fill-available;
   }
   
-
-  
+.google{
+  background-color: #dd4b39;
+}
+button.google:hover{
+  background-color: #993325 !important;
+  border: 0;
+}

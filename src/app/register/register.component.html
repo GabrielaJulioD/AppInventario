@@ -11,7 +11,7 @@
             <div class="card-header justify-content-center"  ><h1>Inventivapp</h1></div>
             <div class="card-header">Registro</div>
             <div class="card-body">
-              <form>
+              <form [formGroup]="formReg" (ngSubmit)="onSubmit()">
                 <div class="form-group">
                   <label for="name">Nombre</label>
                   <input
@@ -22,12 +22,13 @@
                   />
                 </div>
                 <div class="form-group">
-                  <label for="email">Correo electrónico</label>
+                  <label for="email" >Correo electrónico</label>
                   <input
                     type="email"
                     id="email"
                     class="form-control"
                     placeholder="Ingrese su correo electrónico"
+                    formControlName="email"
                   />
                 </div>
                 <div class="form-group">
@@ -37,6 +38,7 @@
                     id="password"
                     class="form-control"
                     placeholder="Ingrese su contraseña"
+                    formControlName="password"
                   />
                 </div>
                 <div class="form-group">
